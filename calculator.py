@@ -57,6 +57,12 @@ while True:
     if len(tokenization) > 3:
         num3 = tokenization[3]
 
+    #handle value error for num1, num2, num3
+    
+    if not num1.isdigit() or not num2.isdigit() or not num3.isdigit():
+        print("Those aren't numbers!")
+        continue
+
     #actual calls to arithmetic functions / doing the actual calculations
 
     if operator == '+':
